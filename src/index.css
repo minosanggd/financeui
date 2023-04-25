@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #000300;
+}
+@layer base {
+.h2 {
+  @apply text-3xl capitalize;
+}
+.grad {
+  @apply bg-gradient-to-t from-[#1F2126] to-[#33363D] drop-shadow-2xl;
+}
+.btn {
+  @apply h-[50px] flex justify-center items-center rounded-[8px] px-10 py-[10px] text-sm uppercase font-bold;
+}
+.btn-primary {
+  @apply uppercase text-black font-bold p-3 rounded-md border border-transparent bg-[#5dd9dd] text-xl hover:bg-transparent hover:border hover:border-[#5dd9dd] hover:text-[#5dd9dd] transition-all;
+}
+.btn-select {
+  @apply uppercase text-[#5dd9dd] font-bold p-3 rounded-md border border-transparent bg-[#000300] text-xl hover:bg-transparent hover:border hover:border-[#5dd9dd] hover:text-[#5dd9dd] transition-all;
+  /* @apply uppercase hover:text-white hover:opacity-90 p-3 text-center rounded-lg bg-red-400  text-white transition-all; */
+}
+.input {
+  @apply h-[50px] rounded-[8px] w-full outline-none px-6 placeholder:text-gray-300 placeholder:italic;
+}
+}
+
